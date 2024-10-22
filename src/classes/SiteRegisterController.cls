@@ -29,6 +29,7 @@ public with sharing class SiteRegisterController {
     get;
     set {
       communityNickname = value == null ? value : value.trim();
+      Name = name
     }
   }
 
