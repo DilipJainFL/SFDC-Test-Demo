@@ -10,7 +10,9 @@ public with sharing class SiteRegisterController {
   }
 
   public String username { get; set; }
+  public String zipCode { get; set; }
   public String email { get; set; }
+  public String address { get; set; }
   public String password {
     get;
     set {
@@ -46,7 +48,8 @@ public with sharing class SiteRegisterController {
     }
     User u = new User();
     u.Username = username;
-    u.Email = email;
+    u.zipCode = zipCode;
+    u.address = address;
     u.CommunityNickname = communityNickname;
 
     String accountId = PORTAL_ACCOUNT_ID;
