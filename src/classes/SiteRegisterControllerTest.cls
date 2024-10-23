@@ -7,6 +7,8 @@ public with sharing class SiteRegisterControllerTest {
   static void testRegistration() {
     SiteRegisterController controller = new SiteRegisterController();
     controller.username = 'test@force.com';
+    controller.phone = '00000000000';
+    controller.address = 'jaipur';
     controller.email = 'test@force.com';
     controller.communityNickname = 'test';
     // registerUser will always return null when the page isn't accessed as a guest user
